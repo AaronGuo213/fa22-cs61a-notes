@@ -1,0 +1,57 @@
+\chapter{Efficiency}
+
+\section{Memoization}
+\begin{itemize}
+    \item Memoization: "remembering" the results that have been computed before
+    \item Example - fibonacci numbers:
+    \item Store the $n^{th}$ fibonacci number in a cache so that its value can be used to compute larger fibonacci numbers later
+\end{itemize}
+
+\section{Exponentiation}
+\begin{itemize}
+    \item Taking advantage of repeated multiplication
+    \item One more multiplication allows the problem size to be doubled
+    \item Example:
+\end{itemize}
+\begin{minted}[tabsize=4]{Python}
+    # doubling imput doubles the time
+    def exp(b, n):
+        if n == 0:
+            return 1
+        else:
+            return b * exp(b, n-1)
+
+    # doubling the input increases the time by one step
+    def exp_fast(b, n):
+        if n == 0:
+            return 1
+        elif n % 2 == 0:
+            return square(exp_fast(b, n//2))
+        else:
+            return b * exp_fast(b, n-1)
+
+    def square(x):
+        return x * x
+\end{minted}
+
+\section{Orders of Growth}
+\begin{description}
+    \item [Constant growth - $\Theta(1), O(1)$:] increasing n doesn't increase time
+    \item [Logarithmic growth - $\Theta(\log n), O(\log n)$:] doubling n increases time by a constant
+    \item [Linear growth - $\Theta(n), O(n)$:] incrementing n increases time by a constant
+    \item [Quadratic growth - $\Theta(n^2), O(n^2)$:] incrementing n increases time by n * constant
+    \begin{itemize}
+        \item Example: functions that process all \emph{pairs} of values in a sequence
+    \end{itemize}
+    \item [Exponential growth - $\Theta(b^n), O(b^n)$:] incrementing n multiplies time by a constant
+    \begin{itemize}
+        \item Example: tree-recursive functions (fibonacci without memoization)
+    \end{itemize}
+\end{description}
+
+\section{Space}
+\begin{itemize}
+    \item Active environments: 
+    \item Environments for any function calls currently being evaluated
+    \item Parent environments of functions named in active environments
+\end{itemize}

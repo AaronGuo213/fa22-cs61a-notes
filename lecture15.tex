@@ -1,0 +1,68 @@
+\chapter{SQL}
+
+\section{Databases}
+\begin{itemize}
+    \item Table: a collection of rows that have a value for each column
+    \item SQL is a \emph{declarative} programming languages
+    \begin{itemize}
+        \item \textbf{Declarative language (SQL, Prolog):} a program is a description of the desired result, and the program figures out how to generate the result
+        \item \textbf{Imperative language (Python, Scheme):} a program is a description of computational processes that the interpreter carries out
+    \end{itemize}
+\end{itemize}
+
+\section{SQL}
+\begin{itemize}
+    \item A \textbf{select} statement creates a new table, either from scratch bor by projecting a table
+    \begin{itemize}
+        \item Always includes a comma-separated list of column descriptions
+    \end{itemize}
+    \begin{minted}[tabsize=4]{SQL}
+    select [expression] as [name], [expression] as [name]; ...
+    select [columns] from [table] where [condition] order by [order];
+    \end{minted}
+    \item A \textbf{create table} statement gives a global name to a table
+    \begin{minted}[tabsize=4]{SQL}
+    create table [name] as [select statement];
+    \end{minted}
+    \item Two or more tables can be joined together
+    \begin{minted}[tabsize=4]{SQL}
+    select parent from parents, dogs where child = name and fur = "curly"
+    \end{minted}
+\end{itemize}
+
+\section{Aliases and Dot Expressions}
+\begin{itemize}
+    \item Aliases and dot expressions clear up ambiguity with column names
+    \item Example of using aliases and dot expressions when joining a table with itself:
+    \begin{minted}[tabsize=4]{SQL}
+    select a.child as first, b.child as second 
+        from parents as a, parents as b 
+        where a.parent = b.parent and a.child < b.child;
+    \end{minted}
+    \item Other statements: \textbf{analyze, delete, explain, insert, replace, update,} etc.
+    \item Expressions can contain function calls and arithmetic Operators
+    \item String values can be combined to form longer strings
+    \begin{minted}[tabsize=4]{SQL}
+    > select "hello," || " world";
+    hello, world
+    \end{minted}
+\end{itemize}
+
+\section{Aggregate Functions}
+\begin{itemize}
+    \item An aggregate function in the [columns] clause computes a value from a group of rows
+    \begin{minted}[tabsize=4]{SQL}
+    select [columns] from [table] where [condition] order by [order];
+    \end{minted}
+    \item Aggregate functions: \textbf{max, min, avg}
+\end{itemize}
+
+\section{Grouping Rows}
+\begin{itemize}
+    \item Rows in a table can be grouped, then aggregation can be performed on each group
+    \item Number of groups is the number of unique values of an expression
+    \item A \textbf{having} clause filters the set of groups that are aggregated
+    \begin{minted}[tabsize=4]{SQL}
+    select [columns] from [table] group by [expression] having [filter expression]
+    \end{minted}
+\end{itemize}

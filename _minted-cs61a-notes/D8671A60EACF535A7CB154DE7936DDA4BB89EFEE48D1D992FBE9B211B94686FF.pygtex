@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{class} \PYG{n+nc}{Tree}\PYG{p}{:}
+        \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{label}\PYG{p}{,} \PYG{n}{branches}\PYG{o}{=}\PYG{p}{[]):}
+            \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label} \PYG{o}{=} \PYG{n}{label}
+            \PYG{k}{for} \PYG{n}{branch} \PYG{o+ow}{in} \PYG{n}{branches}\PYG{p}{:}
+                \PYG{k}{assert} \PYG{n+nb}{isinstance}\PYG{p}{(}\PYG{n}{branch}\PYG{p}{,} \PYG{n}{Tree}\PYG{p}{)}
+            \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{branches} \PYG{o}{=} \PYG{n+nb}{list}\PYG{p}{(}\PYG{n}{branches}\PYG{p}{)}
+            \PYG{k}{for} \PYG{n}{branch} \PYG{o+ow}{in} \PYG{n}{branches}\PYG{p}{:}
+        \PYG{k}{def} \PYG{n+nf}{tree}\PYG{p}{(}\PYG{n}{label}\PYG{p}{,} \PYG{n}{branches}\PYG{o}{=}\PYG{p}{[]):}
+            \PYG{k}{for} \PYG{n}{branch} \PYG{o+ow}{in} \PYG{n}{branches}\PYG{p}{:}
+                \PYG{k}{assert} \PYG{n}{is\PYGZus{}tree}\PYG{p}{(}\PYG{n}{branch}\PYG{p}{)}
+            \PYG{k}{return} \PYG{p}{[}\PYG{n}{label}\PYG{p}{]} \PYG{o}{+} \PYG{n+nb}{list}\PYG{p}{(}\PYG{n}{branches}\PYG{p}{)}
+        \PYG{k}{def} \PYG{n+nf}{label}\PYG{p}{(}\PYG{n}{tree}\PYG{p}{):}
+            \PYG{k}{return} \PYG{n}{tree}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}
+        \PYG{k}{def} \PYG{n+nf}{branches}\PYG{p}{(}\PYG{n}{tree}\PYG{p}{):}
+            \PYG{k}{return} \PYG{n}{tree}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{:]}
+\end{Verbatim}

@@ -1,0 +1,34 @@
+\chapter{Exceptions}
+
+\section{Raise}
+\begin{itemize}
+    \item Raise statements raise an exception in Python
+    \begin{minted}[tabsize=4]{Python}
+    raise <expression>
+    \end{minted}
+    \item <expression must evaluate to a subclass or instance of BaseException
+    \begin{itemize}
+        \item \textbf{TypeError:} incorrect type of argument was passed into a function
+        \item \textbf{NameError:} a name wasn't found
+        \item \textbf{KeyError:} a key wasn't found in a Dictionary
+        \item \textbf{RecursionError:} too many recursive calls
+    \end{itemize}
+\end{itemize}
+
+\section{Try}
+\begin{itemize}
+    \item Try statements handle Exceptions
+    \begin{minted}[tabsize=4]{Python}
+    try:
+        <try suite>
+    except <exception class> as <name>:
+        <except suite>
+    ...
+    \end{minted}
+    \item Execution order:
+    \begin{enumerate}
+        \item <try suite> is executed first
+        \item If, in the try suite, an exception is raised that is not handled otherwise and if the class exception inherits from <exception class>, then
+        \item <except suite> is executed, with <name> bound to the exception
+    \end{enumerate}
+\end{itemize}

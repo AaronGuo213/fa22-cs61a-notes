@@ -1,0 +1,38 @@
+\chapter{Tail Recursion}
+
+\section{Dynamic Scope}
+\begin{description}
+    \item [Lexical scope:] the parent of a frame is the environment in which a procedure was \emph{defined}
+    \begin{minted}[tabsize=4]{Scheme}
+    (define <symbol> (lambda <formal parameters> <body>))
+    \end{minted}
+    \item [Dynamic scope:] the parent of a frame is the environment in which a procedure was \emph{called}
+    \begin{minted}[tabsize=4]{Scheme}
+    (define <symbol> (mu <formal parameters> <body>))
+    \end{minted}
+\end{description}
+
+\section{Tail Recursion}
+\begin{itemize}
+    \item Referential transparency: the value of an expression does not change when we substitute one of its subexpressions with the value of that subexpression
+    \item Tail recursion eliminates the "middleman" frames to save space
+    \item Tail call: a call expression in a tail context
+    \begin{itemize}
+        \item The last sub-expression in a \textbf{lambda} expression's body
+        \item Sub-expressions <consequent> and <alternative> in an \textbf{if} expression that is in a tail context
+        \item All non-predicate sub-expressions in a tail context \textbf{cond}
+        \item The last sub-expression in a tail context \textbf{and, or, begin,} or \textbf{let}
+    \end{itemize}
+\end{itemize}
+
+\section{Macros}
+\begin{itemize}
+    \item Macro: an operation performed on the source code of a program before evaluation
+    \item Scheme example:
+    \begin{minted}[tabsize=4]{Scheme}
+        > (define-macro (twice expr) (list 'begin expr expr))
+        > (twice (print 2))
+        2
+        2
+    \end{minted}
+\end{itemize}

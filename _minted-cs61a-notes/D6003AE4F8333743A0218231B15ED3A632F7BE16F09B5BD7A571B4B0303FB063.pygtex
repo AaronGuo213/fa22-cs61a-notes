@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{n+nb}{\PYGZgt{}}\PYG{+w}{ }\PYG{p}{(}\PYG{k}{define}\PYG{+w}{ }\PYG{n+nv}{a}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n+nb}{\PYGZgt{}}\PYG{+w}{ }\PYG{p}{(}\PYG{k}{define}\PYG{+w}{ }\PYG{n+nv}{b}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n+nb}{\PYGZgt{}}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nb}{list}\PYG{+w}{ }\PYG{l+s+ss}{\PYGZsq{}a}\PYG{+w}{ }\PYG{n+nv}{b}\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{(}\PYG{n+nf}{a}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{)}
+
+\PYG{+w}{    }\PYG{n+nb}{\PYGZgt{}}\PYG{+w}{ }\PYG{o}{\PYGZsq{}}\PYG{p}{(}\PYG{n+nv}{a}\PYG{+w}{ }\PYG{n+nv}{b}\PYG{+w}{ }\PYG{n+nv}{c}\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{(}\PYG{n+nf}{a}\PYG{+w}{ }\PYG{n+nv}{b}\PYG{+w}{ }\PYG{n+nv}{c}\PYG{p}{)}
+\PYG{+w}{    }\PYG{n+nb}{\PYGZgt{}}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nb}{car}\PYG{+w}{ }\PYG{o}{\PYGZsq{}}\PYG{p}{(}\PYG{n+nv}{a}\PYG{+w}{ }\PYG{n+nv}{b}\PYG{+w}{ }\PYG{n+nv}{c}\PYG{p}{))}
+\PYG{+w}{    }\PYG{n+nv}{a}
+\PYG{+w}{    }\PYG{n+nb}{\PYGZgt{}}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nb}{cdr}\PYG{+w}{ }\PYG{o}{\PYGZsq{}}\PYG{p}{(}\PYG{n+nv}{a}\PYG{+w}{ }\PYG{n+nv}{b}\PYG{+w}{ }\PYG{n+nv}{c}\PYG{p}{))}
+\PYG{+w}{    }\PYG{p}{(}\PYG{n+nf}{b}\PYG{+w}{ }\PYG{n+nv}{c}\PYG{p}{)}
+\end{Verbatim}

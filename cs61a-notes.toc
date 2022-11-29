@@ -1,0 +1,73 @@
+\contentsline {chapter}{\chapternumberline {1}Functions and Expressions}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Expressions}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Environment Diagrams}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Functions}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Statements}{4}{section.1.4}%
+\contentsline {chapter}{\chapternumberline {2}More Functions}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Functions}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Lambda Expressions}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Logical Operators}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Errors}{5}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Recursion}{6}{section.2.5}%
+\contentsline {chapter}{\chapternumberline {3}Sequences}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Lists and Containers}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}For Statements}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Ranges}{7}{section.3.3}%
+\contentsline {section}{\numberline {3.4}List Comprehensions}{7}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Slicing}{7}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Aggregation}{8}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Strings}{8}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Dictionaries}{8}{section.3.8}%
+\contentsline {chapter}{\chapternumberline {4}Abstraction}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Data Abstraction}{9}{section.4.1}%
+\contentsline {chapter}{\chapternumberline {5}Mutability}{10}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Objects}{10}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Tuples}{10}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Identity Operators}{10}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Files, Strings, and Lists}{10}{section.5.4}%
+\contentsline {chapter}{\chapternumberline {6}Iterators and Generators}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Iterators}{11}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Built-In Functions for Iteration}{11}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Generators}{11}{section.6.3}%
+\contentsline {chapter}{\chapternumberline {7}Objects}{12}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Classes}{12}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Inheritance}{12}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Representation}{13}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Polymorphic Functions}{13}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Interfaces}{13}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Special Method Names in Python}{13}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Generic Functions}{13}{section.7.7}%
+\contentsline {chapter}{\chapternumberline {8}Composition}{14}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Linked Lists}{14}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Trees}{14}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Modular Design}{15}{section.8.3}%
+\contentsline {chapter}{\chapternumberline {9}Efficiency}{16}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Memoization}{16}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Exponentiation}{16}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Orders of Growth}{16}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Space}{17}{section.9.4}%
+\contentsline {chapter}{\chapternumberline {10}Data Examples}{18}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Lists in Lists in Environment Diagrams}{18}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Objects}{18}{section.10.2}%
+\contentsline {chapter}{\chapternumberline {11}Scheme}{19}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Scheme}{19}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Scheme Lists}{19}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Symbolic Programming}{20}{section.11.3}%
+\contentsline {section}{\numberline {11.4}Built-in List Processing Procedures}{20}{section.11.4}%
+\contentsline {chapter}{\chapternumberline {12}Exceptions}{21}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Raise}{21}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Try}{21}{section.12.2}%
+\contentsline {chapter}{\chapternumberline {13}Programming Languages}{22}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Programming Languages}{22}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Parsing}{22}{section.13.2}%
+\contentsline {section}{\numberline {13.3}Interpreters}{22}{section.13.3}%
+\contentsline {chapter}{\chapternumberline {14}Tail Recursion}{23}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Dynamic Scope}{23}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Tail Recursion}{23}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Macros}{23}{section.14.3}%
+\contentsline {chapter}{\chapternumberline {15}SQL}{24}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Databases}{24}{section.15.1}%
+\contentsline {section}{\numberline {15.2}SQL}{24}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Aliases and Dot Expressions}{24}{section.15.3}%
+\contentsline {section}{\numberline {15.4}Aggregate Functions}{24}{section.15.4}%
+\contentsline {section}{\numberline {15.5}Grouping Rows}{25}{section.15.5}%

@@ -1,0 +1,88 @@
+\chapter{Scheme}
+
+\section{Scheme}
+\begin{itemize}
+    \item Scheme is a dialect of Lisp
+    \item Scheme programs consist of expressions:
+    \begin{itemize}
+        \item Primitive expressions: 2, 3.3, true, +, quotient
+        \item Combinations: (quotient 10 2), (not true)
+    \end{itemize}
+    \item Call expressions incude an operator and 0 or more operands in parentheses
+    \item Special forms: combinations that are not call expressions
+    \item Examples: \textbf{if}, \textbf{and}, \textbf{or}, binding symbols, defining procedures, \textbf{cond}, \textbf{begin}
+    \begin{minted}[tabsize=4]{Scheme}
+    (if <predicate> <consequent> <alternative>)
+
+    (and <exp1> ... <expn>)
+
+    (or <exp1> ... <expn>)
+
+    (define <symbol> <expression>)
+
+    (define (<symbol> <formal parameters>) <body>)
+
+    (cond (<predicate 1> <consequent 1>)
+          (<predicate 2> (begin <consequent 2a> ... <consequent 2m>))
+          ...
+          (else <consequent n>))
+    \end{minted}
+    \item Lambda expressions: 
+    \begin{minted}[tabsize=4]{Scheme}
+    (lambda (<formal parameters>) <body>)
+    \end{minted}
+    \item Let expression: binds symbols to values just for one expression
+    \begin{minted}[tabsize=4]{Scheme}
+    (let <symbol> <expression>)
+    \end{minted}
+\end{itemize}
+
+\section{Scheme Lists}
+\begin{itemize}
+    \item Scheme lists are similar to Python linked-lists
+    \begin{description}
+        \item [cons:] two-argument procedure that creates a linked list
+        \item [car:] procedure that returns the first element of a list
+        \item [cdr:] procedure that returns the rest of a list
+        \item [nil:] the empty list
+    \end{description}
+    \item Example list:
+\end{itemize}
+\begin{minted}[tabsize=4]{Scheme}
+    > (cons 1 (cons 2 (cons 3 (cons 4 nil))))
+    (1 2 3 4)
+    > (define x (cons 1 (cons 2 nil)))
+    > x
+    (1 2)
+    > (car x)
+    1
+    > (cdr x)
+    (2)
+\end{minted}
+
+\section{Symbolic Programming}
+\begin{itemize}
+    \item Symbols normally refer to values, single quote is used to refer to symbols directly
+\end{itemize}
+\begin{minted}[tabsize=4]{Scheme}
+    > (define a 1)
+    > (define b 2)
+    > (list 'a b)
+    (a 2)
+
+    > '(a b c)
+    (a b c)
+    > (car '(a b c))
+    a
+    > (cdr '(a b c))
+    (b c)
+\end{minted}
+
+\section{Built-in List Processing Procedures}
+\begin{description}
+    \item [(append s t):] list the elements of s and t (can be called on more than two lists)
+    \item [(map f s):] call a procedure f on each element of a list s and list results
+    \item [(filter f s):] call a procedure f on each element of a list s and list the elements for which true is the result
+    \item [(apply f s):] call a procedure f using elements of list s as its arguments
+\end{description}
+

@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{class} \PYG{err}{\PYGZlt{}}\PYG{n+nc}{class} \PYG{n}{name}\PYG{o}{\PYGZgt{}}\PYG{p}{:}
+        \PYG{k}{def} \PYG{o}{\PYGZlt{}}\PYG{n}{method} \PYG{n}{name}\PYG{o}{\PYGZgt{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{o}{\PYGZlt{}}\PYG{n}{formal} \PYG{n}{parameters}\PYG{o}{\PYGZgt{}}\PYG{p}{):}
+            \PYG{o}{\PYGZlt{}}\PYG{n}{suite}\PYG{o}{\PYGZgt{}}
+\end{Verbatim}

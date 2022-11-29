@@ -1,0 +1,35 @@
+\chapter{Iterators and Generators}
+
+\section{Iterators}
+\begin{itemize}
+    \item Any container can provide an iterator that provides elements in Order
+    \item iter(iterable) : returns an iterator
+    \item next(iterator) : returns the next element in an iterator
+    \item For dictionaries, the order of items (key-value pairs) is the order in which they were added
+    \item Iterators make few assumptions about the data, so others are more likely to be able to use your code on their data
+    \item Iterators keep track of position within the sequence, ensuring each element is only processed once
+\end{itemize}
+
+\section{Built-In Functions for Iteration}
+\begin{itemize}
+    \item map(func, iterable) : iterate over x in iterable using func(x)
+    \item filter(func, iterable) : iterate over x in iterable if func(x)
+    \item zip(iter1, iter2): iterate over co-indexed (x, y) pairs, 
+    \begin{itemize}
+        \item Skips extras if iterables are different length
+        \item Can take more than two lists as arguments
+    \end{itemize}
+    \item reversed(sequence) : iterate over x in a sequence in reverse order
+    \item Functions to view the contents of an iterator:
+    \item list(iterable) : return a list containing all x in iterable
+    \item tuple(iterable) : return a tuple containing all x in iterable
+    \item sorted(iterable) : return a sorted list containing all x in iterable
+\end{itemize}
+
+\section{Generators}
+\begin{itemize}
+    \item Generator: a function that \emph{yields} values instead of returning them
+    \item A generator can yield multiple times
+    \item A generator is an iterator that is created by calling a \emph{generator function}
+    \item "yield from" statement yields all values from an iterator/iterable
+\end{itemize}

@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k}{select}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{.}\PYG{n}{child}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{k}{first}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{.}\PYG{n}{child}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{k}{second}
+\PYG{+w}{        }\PYG{k}{from}\PYG{+w}{ }\PYG{n}{parents}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{parents}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{b}
+\PYG{+w}{        }\PYG{k}{where}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{.}\PYG{n}{parent}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{.}\PYG{n}{parent}\PYG{+w}{ }\PYG{k}{and}\PYG{+w}{ }\PYG{n}{a}\PYG{p}{.}\PYG{n}{child}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{.}\PYG{n}{child}\PYG{p}{;}
+\end{Verbatim}

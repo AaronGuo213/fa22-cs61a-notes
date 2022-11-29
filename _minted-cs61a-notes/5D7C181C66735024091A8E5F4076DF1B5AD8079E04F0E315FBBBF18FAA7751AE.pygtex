@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{k}{select}\PYG{+w}{ }\PYG{l+s+ss}{\PYGZdq{}hello,\PYGZdq{}}\PYG{+w}{ }\PYG{o}{||}\PYG{+w}{ }\PYG{l+s+ss}{\PYGZdq{} world\PYGZdq{}}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{hello}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{world}
+\end{Verbatim}

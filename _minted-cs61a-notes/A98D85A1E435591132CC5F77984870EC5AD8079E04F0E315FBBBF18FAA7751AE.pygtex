@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k}{select}\PYG{+w}{ }\PYG{p}{[}\PYG{n}{columns}\PYG{p}{]}\PYG{+w}{ }\PYG{k}{from}\PYG{+w}{ }\PYG{p}{[}\PYG{k}{table}\PYG{p}{]}\PYG{+w}{ }\PYG{k}{group}\PYG{+w}{ }\PYG{k}{by}\PYG{+w}{ }\PYG{p}{[}\PYG{n}{expression}\PYG{p}{]}\PYG{+w}{ }\PYG{k}{having}\PYG{+w}{ }\PYG{p}{[}\PYG{n}{filter}\PYG{+w}{ }\PYG{n}{expression}\PYG{p}{]}
+\end{Verbatim}

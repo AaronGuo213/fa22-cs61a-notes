@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{class} \PYG{err}{\PYGZlt{}}\PYG{n+nc}{name}\PYG{o}{\PYGZgt{}}\PYG{p}{:}
+        \PYG{o}{\PYGZlt{}}\PYG{n}{suite}\PYG{o}{\PYGZgt{}}
+\end{Verbatim}

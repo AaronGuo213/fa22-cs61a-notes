@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{class} \PYG{n+nc}{Link}\PYG{p}{:}
+        \PYG{n}{empty} \PYG{o}{=} \PYG{p}{()} \PYG{c+c1}{\PYGZsh{} some zero\PYGZhy{}length sequence}
+        \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{first}\PYG{p}{,} \PYG{n}{rest}\PYG{o}{=}\PYG{n}{empty}\PYG{p}{):}
+            \PYG{k}{assert} \PYG{n}{rest} \PYG{o+ow}{is} \PYG{n}{Link}\PYG{o}{.}\PYG{n}{empty} \PYG{o+ow}{or} \PYG{n+nb}{isinstance}\PYG{p}{(}\PYG{n}{rest}\PYG{p}{,} \PYG{n}{Link}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} verify rest is a linked list}
+            \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{first} \PYG{o}{=} \PYG{n}{first}
+            \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{rest} \PYG{o}{=} \PYG{n}{rest}
+\end{Verbatim}

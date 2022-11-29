@@ -1,0 +1,105 @@
+\chapter{Objects}
+
+\section{Classes}
+\begin{minted}[tabsize=4]{Python}
+    class <name>:
+        <suite>
+\end{minted}
+\begin{itemize}
+    \item Class: a type/category of objects
+    \item Objects are created by calling Classes
+    \item Classes are objects as well
+    \item Every object that is an instance of a user-defined class has a unique identity
+    \item "is" and "is not" test if two expressions evaluate to the same object
+    \item Binding an object to a new name using assignment does not create a new object
+    \item Methods are functions definined in the suite of a class statement
+    \item Defining methods:
+\end{itemize}
+\begin{minted}[tabsize=4]{Python}
+    class <class name>:
+        def <method name>(self, <formal parameters>):
+            <suite>
+\end{minted}
+\begin{itemize}
+    \item Dot expressions: <exp>.<name>
+    \begin{itemize}
+        \item <exp> must evaluate to an object
+        \item If <name> is a method, then "self" parameter is automatically supplied
+        \item Evaluation order:
+        \begin{enumerate}
+            \item Evaluate <exp>
+            \item <name> is looked up in the instance attributes of that object
+            \item If not found, <name> is looked up in the class
+            \item If the value is a function, a bound method is returned. If not, the value is returned
+        \end{enumerate}
+    \end{itemize}
+    \item Looking up an attribute using a string: getattr(<object expression>, "<name>")
+    \item Instance attributes are attributes of a specific object instance
+    \item Class attributes are shared across all instances of a class
+    \item Assignment using dot expressions: <exp1>.<name> = <exp2>
+    \begin{itemize}
+        \item The value of <exp2> is binded to the attribute <name> found in the evaluated <exp1> object
+    \end{itemize}
+\end{itemize}
+
+\section{Inheritance}
+\begin{itemize}
+    \item Inheritance: a technique for relating classes together
+    \item Often used for specialization
+\end{itemize}
+\begin{minted}[tabsize=4]{Python}
+    class <class name>(<base class>):
+        <suite>
+\end{minted}
+\begin{itemize}
+    \item Subclass inherits attributes of its base class
+    \item Certain inherited attributes may be overridden
+    \item Base class attributes are not copied into subclasses
+    \item Inheritance is best for representing \emph{is-a relationships}
+    \item Composition is best for representing \emph{has-a relationships}
+    \item A class may inherit from multiple base classes in Python
+\end{itemize}
+
+\section{Representation}
+\begin{itemize}
+    \item All objects have two forms of string representations
+    \item "str" is legible to humans (same value as what is printed with "print" function)
+    \item "repr" is legible to the Python interpreter
+    \item For most object types, eval(repr(object)) == object
+    \item F-Strings for string interpolation
+    \begin{itemize}
+        \item String interpolation: evaluating a string literal that contains expressions
+        \item Equivalent examples:
+        \item String concatenation: 'pi starts with ' + str(pi) + '...'
+        \item String interpolation: f'pi starts with \{pi\}...'
+        \item Equivalent output: 'pi starts with 3.141592653589793...'
+    \end{itemize}
+\end{itemize}
+
+\section{Polymorphic Functions}
+\begin{itemize}
+    \item Polymorphic function: a function that applies to many different forms of data
+    \item Examples: "str" and "repr"
+\end{itemize}
+
+\section{Interfaces}
+\begin{itemize}
+    \item Interface: a set of shared messages, along with a specification of what they management
+    \item Example: classes that implement \_\_repr\_\_ and \_\_str\_\_ methods that return string representations implement an interface for producing string representations
+\end{itemize}
+
+\section{Special Method Names in Python}
+\begin{itemize}
+    \item \_\_init\_\_ : method invoked automatically when an object is construction
+    \item \_\_repr\_\_ : method invoked to display an object as a Python expression
+    \item \_\_add\_\_ : method invoked to add one object to another
+    \item \_\_bool\_\_ : method invoked to convert an object to True or False
+    \item \_\_float\_\_ : method invoked to convert an object to a float
+\end{itemize}
+
+\section{Generic Functions}
+\begin{itemize}
+    \item A polymorphic function may take arguments that vary in types
+    \item Type dispatching: inspect the type of an argument to select behavior
+    \item Type coercion: convert one value to math the type of another
+\end{itemize}

@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{p}{(}\PYG{k}{if}\PYG{+w}{ }\PYG{n+nv}{\PYGZlt{}predicate\PYGZgt{}}\PYG{+w}{ }\PYG{n+nv}{\PYGZlt{}consequent\PYGZgt{}}\PYG{+w}{ }\PYG{n+nv}{\PYGZlt{}alternative\PYGZgt{}}\PYG{p}{)}
+
+\PYG{+w}{    }\PYG{p}{(}\PYG{k}{and}\PYG{+w}{ }\PYG{n+nv}{\PYGZlt{}exp1\PYGZgt{}}\PYG{+w}{ }\PYG{o}{...}\PYG{+w}{ }\PYG{n+nv}{\PYGZlt{}expn\PYGZgt{}}\PYG{p}{)}
+
+\PYG{+w}{    }\PYG{p}{(}\PYG{k}{or}\PYG{+w}{ }\PYG{n+nv}{\PYGZlt{}exp1\PYGZgt{}}\PYG{+w}{ }\PYG{o}{...}\PYG{+w}{ }\PYG{n+nv}{\PYGZlt{}expn\PYGZgt{}}\PYG{p}{)}
+
+\PYG{+w}{    }\PYG{p}{(}\PYG{k}{define}\PYG{+w}{ }\PYG{n+nv}{\PYGZlt{}symbol\PYGZgt{}}\PYG{+w}{ }\PYG{n+nv}{\PYGZlt{}expression\PYGZgt{}}\PYG{p}{)}
+
+\PYG{+w}{    }\PYG{p}{(}\PYG{k}{define}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nf}{\PYGZlt{}symbol\PYGZgt{}}\PYG{+w}{ }\PYG{n+nv}{\PYGZlt{}formal}\PYG{+w}{ }\PYG{n+nv}{parameters\PYGZgt{}}\PYG{p}{)}\PYG{+w}{ }\PYG{n+nv}{\PYGZlt{}body\PYGZgt{}}\PYG{p}{)}
+
+\PYG{+w}{    }\PYG{p}{(}\PYG{k}{cond}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nf}{\PYGZlt{}predicate}\PYG{+w}{ }\PYG{n+nv}{1\PYGZgt{}}\PYG{+w}{ }\PYG{n+nv}{\PYGZlt{}consequent}\PYG{+w}{ }\PYG{n+nv}{1\PYGZgt{}}\PYG{p}{)}
+\PYG{+w}{          }\PYG{p}{(}\PYG{n+nf}{\PYGZlt{}predicate}\PYG{+w}{ }\PYG{n+nv}{2\PYGZgt{}}\PYG{+w}{ }\PYG{p}{(}\PYG{k}{begin}\PYG{+w}{ }\PYG{n+nv}{\PYGZlt{}consequent}\PYG{+w}{ }\PYG{n+nv}{2a\PYGZgt{}}\PYG{+w}{ }\PYG{o}{...}\PYG{+w}{ }\PYG{n+nv}{\PYGZlt{}consequent}\PYG{+w}{ }\PYG{n+nv}{2m\PYGZgt{}}\PYG{p}{))}
+\PYG{+w}{          }\PYG{o}{...}
+\PYG{+w}{          }\PYG{p}{(}\PYG{k}{else}\PYG{+w}{ }\PYG{n+nv}{\PYGZlt{}consequent}\PYG{+w}{ }\PYG{n+nv}{n\PYGZgt{}}\PYG{p}{))}
+\end{Verbatim}

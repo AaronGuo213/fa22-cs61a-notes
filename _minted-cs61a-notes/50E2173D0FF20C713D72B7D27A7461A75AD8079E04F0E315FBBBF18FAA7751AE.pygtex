@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k}{select}\PYG{+w}{ }\PYG{n}{parent}\PYG{+w}{ }\PYG{k}{from}\PYG{+w}{ }\PYG{n}{parents}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{dogs}\PYG{+w}{ }\PYG{k}{where}\PYG{+w}{ }\PYG{n}{child}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{name}\PYG{+w}{ }\PYG{k}{and}\PYG{+w}{ }\PYG{n}{fur}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+ss}{\PYGZdq{}curly\PYGZdq{}}
+\end{Verbatim}

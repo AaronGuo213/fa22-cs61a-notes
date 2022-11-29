@@ -1,0 +1,62 @@
+\chapter{More Functions}
+
+\section{Functions}
+\begin{itemize}
+    \item Function domain: the set of all inputs that are possible for arguments
+    \item Function range: the set of all output values that are possible to return
+    \item Function behavior: the relationship between input and output
+    \item A function is an abstraction for its effect, behavior, or return value
+    \item Functions are a type of value
+    \item Higher-order function: a function that takes a function as an argument or returns a function
+    \item Higher-order functions can be described with environment diagrams
+    \item Self-reference: returning a function using its own name
+    \item Parent frame of a function: the frame in which the function was \emph{defined}
+\end{itemize}
+
+\section{Lambda Expressions}
+\begin{itemize}
+    \item Lambda expression: an expression that evaluates to a function
+    \item Anatomy: lambda <arguments>: <single expression that evaluates to return value>
+    \item Lambda expressions cannot contain statements
+    \item "def" vs. "lambda": only def gives the function an intrinsic name in environment diagrams (doesn't affect execution)
+    \item Function currying: transforming a multi-argument function into a single-argument, higher-order function
+\end{itemize}    
+
+\section{Logical Operators}
+\begin{itemize}
+    \item Evaluation of <left> and <right>:
+    \begin{enumerate}
+		\item Evaluate <left>
+		\item If the result is False, then the whole expression evaluates to False
+		\item Otherwise, the whole expression evaluates to <right>
+	\end{enumerate}
+    \item Evaluation of <left> or <right>:
+    \begin{enumerate}
+		\item Evaluate <left>
+		\item If the result is True, then the whole expression evaluates to Talse
+		\item Otherwise, the whole expression evaluates to <right>
+	\end{enumerate}
+\end{itemize}
+
+\section{Errors}
+\begin{itemize}
+    \item Syntax errors: detected by Python interpreter before execution
+    \item Runtime errors: detected by Python interpreter during execution
+    \item Logic \& behavior errors: Not detected by the Python interpreter
+\end{itemize}
+
+\section{Recursion}
+\begin{itemize}
+    \item Recursive function: a function that calls itself, directly or indirectly
+    \item Usage: solving problems that \emph{have smaller instances of the same problem}
+    \item Anatomy:
+    \begin{itemize}
+        \item "def" statement header
+        \item Conditional statements that check for \emph{base cases}
+        \item Base cases are evaluated \emph{without recursive calls}
+        \item Recursive cases (all other cases) are evaluated \emph{with recursive calls}
+    \end{itemize}
+    \item The recursive leap of faith: assumption that the smaller case is solved correctly to solve the current case
+    \item Iteration is a special case of recursion
+    \item Tree recusion: a recursive function makes more than one recursive call
+\end{itemize}

@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{try}\PYG{p}{:}
+        \PYG{o}{\PYGZlt{}}\PYG{k}{try} \PYG{n}{suite}\PYG{o}{\PYGZgt{}}
+    \PYG{k}{except} \PYG{o}{\PYGZlt{}}\PYG{n}{exception} \PYG{n}{class}\PYG{o}{\PYGZgt{}} \PYG{k}{as} \PYG{o}{\PYGZlt{}}\PYG{n}{name}\PYG{o}{\PYGZgt{}}\PYG{p}{:}
+        \PYG{o}{\PYGZlt{}}\PYG{k}{except} \PYG{n}{suite}\PYG{o}{\PYGZgt{}}
+    \PYG{o}{...}
+\end{Verbatim}
